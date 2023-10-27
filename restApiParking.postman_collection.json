@@ -1,0 +1,264 @@
+{
+	"info": {
+		"_postman_id": "de38b2f9-bdb2-4a18-a1cc-7c6582da9d32",
+		"name": "restApiParking",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "addParking",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "customer",
+							"value": "Alex",
+							"type": "text"
+						},
+						{
+							"key": "car",
+							"value": "Ford Escort",
+							"type": "text"
+						},
+						{
+							"key": "status",
+							"value": "Parked",
+							"type": "text"
+						},
+						{
+							"key": "obs",
+							"value": "Rental customer",
+							"type": "text"
+						},
+						{
+							"key": "date",
+							"value": "11/06/2021",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/parking",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"parking"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "selectAllParking",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "customer",
+							"value": "Alex",
+							"type": "text"
+						},
+						{
+							"key": "car",
+							"value": "Ford Escort",
+							"type": "text"
+						},
+						{
+							"key": "status",
+							"value": "Parked",
+							"type": "text"
+						},
+						{
+							"key": "obs",
+							"value": "Rental customer",
+							"type": "text"
+						},
+						{
+							"key": "date",
+							"value": "11/06/2021",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/parking",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"parking"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "searchById",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "customer",
+							"value": "Alex",
+							"type": "text"
+						},
+						{
+							"key": "car",
+							"value": "Ford Escort",
+							"type": "text"
+						},
+						{
+							"key": "status",
+							"value": "Parked",
+							"type": "text"
+						},
+						{
+							"key": "obs",
+							"value": "Rental customer",
+							"type": "text"
+						},
+						{
+							"key": "date",
+							"value": "11/06/2021",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/parking/1",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"parking",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "alterParkingInfo",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "customer",
+							"value": "Alex",
+							"type": "text"
+						},
+						{
+							"key": "car",
+							"value": "Ford Escort",
+							"type": "text"
+						},
+						{
+							"key": "status",
+							"value": "Parked",
+							"type": "text"
+						},
+						{
+							"key": "obs",
+							"value": "Rental customer",
+							"type": "text"
+						},
+						{
+							"key": "date",
+							"value": "11/06/2021",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/parking/1?car=Honda Civic 2008",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"parking",
+						"1"
+					],
+					"query": [
+						{
+							"key": "car",
+							"value": "Honda Civic 2008"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteParking",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "customer",
+							"value": "Alex",
+							"type": "text"
+						},
+						{
+							"key": "car",
+							"value": "Ford Escort",
+							"type": "text"
+						},
+						{
+							"key": "status",
+							"value": "Parked",
+							"type": "text"
+						},
+						{
+							"key": "obs",
+							"value": "Rental customer",
+							"type": "text"
+						},
+						{
+							"key": "date",
+							"value": "11/06/2021",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/parking/1",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"parking",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
